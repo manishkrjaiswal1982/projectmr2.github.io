@@ -1,0 +1,641 @@
+@charset "utf-8";
+/* CSS Document */
+/* Style for rotation blocker overlay */
+* {
+    -webkit-overflow-scrolling: touch;
+}
+
+
+#initClickDiv{
+position: fixed !important;
+}
+
+#initClickDiv button:focus{
+outline: -webkit-focus-ring-color auto 1px !important; 
+outline-offset: -8px !important;
+}
+
+.Bullet_Cls a span,.Bullet_Cls a span{
+text-decoration:underline; color: #005da2 !important;
+}
+
+.custHead {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.sr_only{
+    height: 1px !important;
+    width: 1px !important;
+    overflow:hidden;
+}
+
+select {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.mejs__container{
+    background-color:transparent !important;
+}
+
+.mejs__container-fullscreen{
+    
+     background-color:#666666 !important;
+}
+
+#divContent input{    
+  background-image:url(bg_color3_20_20.png);
+  border: none;
+  color: white;
+  padding: 5px 32px;
+  text-align: center;
+  font-size: 27px;
+  border-radius:20px;
+  font-family: "Knowledge2017";
+    width:150px !important;
+}
+#divContent table{
+   font-size: 18px; 
+    color: white;
+    font-family: "Knowledge2017";
+}
+#divContent input:hover{
+    
+    background-image:url(bg_color7_20_20.png);
+  
+}
+#divContent table tr:nth-child(0){
+    
+    height:60px !important;
+  
+}
+#divContent table tr:nth-child(1){
+    
+    height:100px !important;
+  
+}
+#divContent table tr:nth-child(3){
+    
+    height:60px !important;
+  
+}
+.rotationOverlay {
+  height: 100% !important;
+  width: 100% !important;
+  position: fixed !important;
+  z-index: 1000000000 !important;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.8);
+  overflow-x: hidden;
+    text-align: center;
+  display: none;
+  
+}
+.rotationOverlay div{
+  height: 100% !important;
+  width: 100% !important;
+    
+  
+  
+}
+.rotationOverlay P{
+ margin: 40 !important;
+  position: absolute !important;
+width:80%;
+  top: 50% !important;
+  left: 50% !important;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+/*end of rotation blocker style*/
+/*styles for webfont*/
+.TitleStyle *{
+font-family:'knowledge2017',Arial !important;
+}
+.course_title{
+line-height:1.050 !important;
+}
+.course_name{
+	width:1300px;
+	line-height: 28px;
+	
+}
+.course_name h2{
+	
+}
+.course_name span {
+    /*text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;*/
+	color:#404040 !important;
+	 display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+	margin: 0px 10px 5px 10px;
+	
+}
+.course_name:hover {
+    background: #cfd5d5;
+		
+}
+.course_name:hover span {
+    /*text-overflow:inherit;
+    overflow:visible;
+    white-space:normal;*/
+	 display: -webkit-box;
+    -webkit-line-clamp: initial;
+    -webkit-box-orient: vertical; 
+	
+}
+
+.course_name:focus {
+    background: #cfd5d5;
+    outline: -webkit-focus-ring-color auto 1px !important; 
+    outline-offset: 3px !important;
+		
+}
+.course_name:focus span {
+    /*text-overflow:inherit;
+    overflow:visible;
+    white-space:normal;*/
+	 display: -webkit-box;
+    -webkit-line-clamp: initial;
+    -webkit-box-orient: vertical; 
+	
+}
+
+@font-face {
+  font-family: "Knowledge2017";
+  src: url("fonts/knowledge2017-regular-webfont.woff2") format("woff2"), url("fonts/knowledge2017-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Knowledge2017 Italic";
+  src: url("fonts/knowledge2017-regularitalic-webfont.woff2") format("woff2"), url("fonts/knowledge2017-regularitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Knowledge2017 Ultralight";
+  src: url("fonts/knowledge2017-ultralight-webfont.woff2") format("woff2"), url("fonts/knowledge2017-ultralight-webfont.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Knowledge2017 Ultralight Italic";
+  src: url("fonts/knowledge2017-ultralightitalic-webfont.woff2") format("woff2"), url("fonts/knowledge2017-ultralightitalic-webfont.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Knowledge2017 Light";
+  src: url("fonts/knowledge2017-light-webfont.woff2") format("woff2"), url("fonts/knowledge2017-light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Knowledge2017 Light Italic";
+  src: url("fonts/knowledge2017-lightitalic-webfont.woff2") format("woff2"), url("fonts/knowledge2017-lightitalic-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Knowledge2017 Medium";
+  src: url("fonts/knowledge2017-medium-webfont.woff2") format("woff2"), url("fonts/knowledge2017-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Knowledge2017 Medium Italic";
+  src: url("fonts/knowledge2017-mediumitalic-webfont.woff2") format("woff2"), url("fonts/knowledge2017-mediumitalic-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Knowledge2017 Bold";
+  src: url("fonts/knowledge2017-bold-webfont.woff2") format("woff2"), url("fonts/knowledge2017-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Knowledge2017 Bold Italic";
+  src: url("fonts/knowledge2017-bolditalic-webfont.woff2") format("woff2"), url("fonts/knowledge2017-bolditalic-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Knowledge2017 Black";
+  src: url("fonts/knowledge2017-black-webfont.woff2") format("woff2"), url("fonts/knowledge2017-black-webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Knowledge2017 Black Italic";
+  src: url("fonts/knowledge2017-blackitalic-webfont.woff2") format("woff2"), url("fonts/knowledge2017-blackitalic-webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+}
+/*end of styles for webfont*/
+
+/* Styles for focus */
+
+*:not(button):focus{
+    /*border-color: #000 !important;
+    outline: 2px dotted #000 !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;*/
+}
+
+/*p:focus{
+ 
+    outline:none !important;
+   
+    
+}
+button:focus{
+    outline: -webkit-focus-ring-color auto 1px !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-offset: -2px;
+}
+
+a:focus, input:focus, textarea:focus{
+    outline: -webkit-focus-ring-color auto 1px !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-offset: -2px;
+}
+
+div[class^='closeGlossBtn'] button:focus{
+outline-offset: -2px;
+}
+ *:focus {
+    outline: -webkit-focus-ring-color auto 1px !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-offset: -2px;
+}
+
+.enableMenuItem a:focus{
+    
+    outline: -webkit-focus-ring-color auto 1px !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-offset: -2px;
+}
+
+
+
+select:focus{
+    
+    outline-color: #FFF !important;
+}*/
+
+/* end of focus style */
+
+
+.pageNum{
+line-height:40px !important;
+	
+}
+.pageNum span{
+color: #404040 !important;
+	
+}
+.start_text button{
+opacity:0;
+}
+.start_text button:focus{
+opacity:1;
+}
+.mejs__captions-selector{
+display:none !important; /* To remove language selection for accessibility*/
+}
+
+.button_label{
+pointer-events:none;
+}
+
+
+/* style for popup link */
+
+.static_content a span,.bullet_content a span{
+    text-decoration:underline; color: #ff5900 !important;
+}
+
+/*end of style for popup link*/
+
+/*custom css*/
+
+.blocker *{
+cursor:default !important;
+}
+.blocker_help *{
+cursor:default !important;
+}
+.fixpos{
+pointer-events:auto;
+}
+.topLayer{
+z-index:1000000001 !important;
+}
+.pageNumberBox{
+display:none;
+}
+#foldertree .pageNumberBox{
+display:block;
+}
+/*end of custom css*/
+
+
+/*BKG css*/
+
+body {background-color: #666666 !important}
+#pageDIV
+{overflow:hidden
+}
+
+*{
+	
+outline: none;
+}
+
+span img{
+	
+	vertical-align:top;
+	}
+
+a span{color:#ff5900900 !important}
+
+
+.scroll_text{
+padding-right:10px;
+}
+
+.mejs__audio{
+	top: 439px !important;
+	right: 185px !important;
+}
+
+.heading_text_1 *{
+	color:#ff5900 !important;		/*Modify to change font color for heading globally*/
+}
+
+.feedBack_heading_corr *{
+    color:#387c2b !important;		/*Modify to change font color for heading "Well done!" in quiz*/  
+}
+
+.feedBack_heading_incorr *{
+    color:#dc0a0a !important;		/*Modify to change font color for heading "Not quite!" in quiz*/  
+}
+/*
+.bodyText1 p span{
+	color:#dc0a0a !important;		
+}
+
+.bodyText2 p span{
+	color:#387c2b !important;		
+}
+
+.bodyText1 ul li span{
+	color:#dc0a0a !important;		
+}
+
+.bodyText2 *{
+	color:#387c2b !important;		
+}
+*/
+.bodyText1 *{
+	color:#404040 !important;		/*Modify to change font color for bullet texts globally which are not getting updated from any templete*/
+}
+
+
+.bodyText2 *{
+	color:#ffffff !important;		/*Modify to change font color for bullet texts globally which are not getting updated from any templete*/
+}
+
+.bodyText2_mobile *{
+	color:#404040 !important;		/*Modify to change font color for bullet texts globally which are not getting updated from any templete*/
+}
+
+
+
+.layer1000000 {
+	z-index: 1000000 !important;
+}
+/*
+div[class^="tabContent"] p span{
+	color:#dc0a0a !important;		
+*/
+
+/* end of BKG css*/
+
+ .orientation_blocker{
+        z-index: 9999999999 !important;
+        
+    }
+
+@media  only screen and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 15px;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #C3C3C3;
+    border: 1px solid #eee;
+}
+}
+@media  only screen and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 15px;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #C3C3C3;
+    border: 1px solid #eee;
+}
+}
+ 
+@media only screen and (max-width: 480px)  and (orientation: portrait) {
+	
+ 
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 15px;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #C3C3C3;
+    border: 1px solid #eee;
+}
+    .course_name{
+        display: flex;
+        align-items: center;
+        height: 44px;
+        line-height: 15px;
+    }
+	
+	.course_name:hover{
+		display: block;
+		 height:auto;
+        
+    }
+    
+    .course_name:focus{
+		display: block;
+		 height:auto;
+        
+    }
+    
+	.course_name span {
+    
+    -webkit-line-clamp: 2;
+   
+	
+}
+	.course_name:hover span{
+	margin: 5px 10px 5px 10px;
+	}
+    
+    .course_name:focus span{
+	margin: 5px 10px 5px 10px;
+	}
+	
+   
+/* For table on result page for mobile view */
+	.chapter_score_tb table  {
+	width: 420px !important;
+	}
+	.chapter_score_tb table td {
+	width: 50% !important;
+	display: table-cell!important;
+	}
+	.chapter_score_tb table td:nth-child(2) {
+  	width: 50% !important;
+	display: table-cell !important;
+	}
+    
+}
+@media only screen and (max-width: 768px)  and (orientation: landscape) {
+/* 
+.rotationOverlay {
+  
+  display: block !important;
+  
+}*/
+    
+}
+/* styles for glossary table*/
+#glossaryDialogOverlay{
+    background-image:url(black_50_per_1px.png); /*Modify to change the Index Overlay color or transperancy*/
+	position:absolute;
+    width: 100%;
+    height:100%;
+    z-index: 1000;
+    
+}
+#glossaryDialog{
+    position:absolute !important;
+    top:0px;
+    z-index: 1101 !important; 
+    
+}
+
+.glossaryTable table {
+	text-align: left;
+	
+}
+
+.glossaryTable th {
+	padding-left:10px;
+    padding-top:15px;
+	padding-bottom:15px;
+	padding-right:15px; 
+	text-align: left;
+	vertical-align:top;	
+	
+}
+
+.glossaryTable td {
+	padding-top:10px;
+    padding-left:10px;
+	padding-bottom:15px;
+	padding-right:15px; 
+	text-align: left;
+	vertical-align:top;
+}
+
+.glossaryTable tr th:first-child {
+  width: 8em;
+  min-width: 8em;
+  max-width: 8em;
+}
+
+.glossaryTable tr:nth-child(even) {
+	background-color: #E3E3E3;
+}
+
+.glossaryTable ul {
+    list-style: inherit;
+    padding-left: 40px;
+    margin-top: 10px;
+}
+
+.glossaryTable ol {
+    list-style-type:  decimal;	
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/*For customisation/branding  */
+.visitedLineicon{
+	border-bottom:10px solid #162e5c !important; /*Modify to change style for Visited state [Current style : 5px border at bottom]*/	
+}
+.menuFeatureThumbnail{    
+    border: solid 5px #162e5c !important;     
+}
+.selQuizOpt{
+    box-shadow: 0 0 0 3px #162e5c !important;      
+}
+@media only screen and (min-device-width: 1030px) {
+.quizLabel.activeLabel label:hover{
+    box-shadow: 0 0 0 3px #162e5c !important;
+}   
+}
+.helpActivelink , .HelpMenu_cont li a:hover{    
+    border-bottom: 5px solid #162e5c !important;   
+}
+.helpActivelink span, .HelpMenu_cont li a:hover span{    
+    color:#162e5c !important;   
+}
+.changeShapeClr {
+    fill: #162e5c !important;   /*To change the color of the Carousel navigation band*/ 
+}
+.changeTextClr {
+    color: #162e5c !important;  /*To change the color of the text*/  
+}
+.changeLinkClr {
+    color: #005da2 !important;  /*To change the color of the link*/  
+}
+input:checked + .slider {
+  background-color: #162e5c !important;
+}
+.tabBorder{
+   border: 3px solid #162e5c !important; 
+} 
+/*Ends here*/

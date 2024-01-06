@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Email Redirection</title>
+</head>
+
+<script>
+
+window.resizeTo(100,100);
+
+function redirectEmail(){
+var isiPad = navigator.userAgent.match(/iPad/i) != null;
+
+var urlText=window.location.href
+parameter=decodeURIComponent(urlText.split("?")[1])
+window.location='mailto:'+parameter
+
+//window.location='mailto:grc.crr.trainingops@thomsonreuters.com'
+//closeMe()
+
+if(isiPad)
+{
+   setInterval(closeMe,5000)
+  
+}
+else{
+
+setInterval(closeMe,200)
+}
+
+}
+
+
+function closeMe(){
+window.close();
+top.close();
+}
+
+function gotoEmail(){
+	setTimeout(redirectEmail,1000)
+	}
+</script>
+
+<body onLoad="gotoEmail()">
+</body>
+</html>

@@ -1,0 +1,370 @@
+.menuContainer{
+	display:none;
+	}
+#pageDIV{
+		
+		background-image:url(bg_color1_20_20.png) !important;
+		
+		}	
+div[id^='toc']{
+	overflow: hidden;
+	/*overflow-x: hidden;*/
+    display: block;
+    clip: auto !important;
+	
+    
+    top:0px !important;
+	/*clipbottom: auto !important;
+   	padding:0px !important;*/
+	z-index:960 !important;
+	background-image:url(bg_color1_20_20.png) !important;
+   	left:auto !important;
+	right:0px;
+    height:840px !important;
+    
+	}
+
+.menuOverlay{
+    height:100% !important;
+    
+}
+.menuOverlay img{
+    height:100% !important;
+    
+}
+div[id^='toc']{
+    /*padding-top: 60px !important;*/
+    top: 60px !important;
+    background-image: none !important;
+}
+
+div[id^='toc']>div[id^='toc']{
+ overflow-y: scroll;   
+    
+}
+.indexblocker{
+	position:absolute;
+	height:100%;
+	width:100%;
+	background-image:url(black_50_per_1px.png); /*Modify to change the Index Overlay color or transperancy*/
+	top:0px;
+	left:0px;
+	z-index:950 !important;
+	}
+
+	
+.indexblocker{
+	background-image:url(black_50_per_1px.png); /*Modify to change the Index Overlay color or transperancy*/
+	top:0px;	
+		
+	}
+
+#pageDialogOverlay{
+    background-image:url(black_50_per_1px.png); /*Modify to change the Index Overlay color or transperancy*/
+	position:absolute;
+    width: 100%;
+    height:100%;
+    z-index: 1000;
+    
+}
+
+#pageDialog{
+    position:absolute !important;
+    top:0px;
+    z-index: 1100 !important; 
+    
+}
+
+div[class^='blocker_glossary'] *{
+    cursor:default !important;
+}
+
+.indexblocker[aria-hidden="true"],
+div[id^='toc'][aria-hidden="true"],.helpDialog[aria-hidden="true"],.blocker_help[aria-hidden="true"],div[id^='glossaryDialog'][aria-hidden="true"],div[class^='blocker_glossary'][aria-hidden="true"] {
+	display: none;
+	
+}
+
+.indexblocker:not([aria-hidden="true"]),
+div[id^='toc']:not([aria-hidden="true"]),.helpDialog:not([aria-hidden="true"]),
+.blocker_help:not([aria-hidden="true"]) {
+	display: block;
+	
+}	
+
+div[id^='toc'] table TR{
+	margin:0px;
+	padding:0px;
+	border-spacing:0px;
+	border-spacing:0px;
+	}
+div[id^='toc'] table{
+	
+	margin:0px;
+	padding:0px;
+	border-spacing:0px;
+	border-spacing:0px;
+	}
+div[id^='toc']>table{
+	/*margin-top:50px;*/
+	}	
+	
+	
+div[id^='toc'] table TD{
+	margin:0px;
+	padding:0px;
+	border-spacing:0px;
+	
+	}
+.menuFeatureBlank{
+  width:20px;
+    height:20px;
+   
+        display: inline-block;
+    vertical-align: middle;
+     margin-left: 5px;  
+    
+}
+.menuFeatureAudio{
+ width:20px;
+    height:20px;
+    background-image: url(menuFeatureAudio.png);
+    background-repeat: no-repeat;
+        display: inline-block;
+    vertical-align: middle;
+     margin-left: 5px;
+     
+}
+.menuFeatureVideo{
+ width:20px;
+    height:20px;
+    background-image: url(menuFeatureVideo.png);
+    background-repeat: no-repeat;
+        display: inline-block;
+    vertical-align: middle;
+     margin-left: 5px;
+     
+}
+.menuFeatureInteractive{
+ width:20px;
+    height:20px;
+    background-image: url(menuFeatureInteractive.png);
+    background-repeat: no-repeat;
+        display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+     
+}
+.menuFeatureThumbnail{
+    display: none;
+width: 150px;
+    height: 85px;
+    position: absolute;
+    background-color: red;
+    left: -160px;
+    border: solid 5px #FA6400;
+    background-repeat: no-repeat;
+     
+}
+#foldertree .enableMenuItem:hover .menuFeatureThumbnail{
+  display: block;  
+    
+}
+#foldertree .disableMenuItem:hover .menuFeatureThumbnail{
+  display: block;  
+    
+}
+#foldertree .enableMenuItem{
+	padding:10px;
+	background-position: 0px 4px;
+	background-image:url(bg_color6_20_20.png) !important;				/*modify to change the visited state color of menu*/
+	cursor:pointer;
+	border-bottom:5px solid #afafaf;		/*modify to change the style of Index list seperater*/
+	border-collapse:collapse;
+	width:360px;
+	}
+.menuText{
+	width:330px;							/*modify to adjust width of text within menu item incase of overlap with scroll or other element*/
+	
+	}
+	
+.menuText a{
+	white-space:pre-wrap !important;						
+	
+	}
+#foldertree .enableMenuItem a{
+	color:#FFFFFF !important; 				/*modify to change the visited state font color of menu*/
+	
+	}	
+#foldertree .enableMenuItem:hover{
+	/*background-color:#ff9100;*/
+	
+	}
+	
+#foldertree .activeMenuItem{
+	background-image:url(bg_color3_20_20.png) !important;	/*modify to change the active state color of menu*/
+	padding:10px;
+	width:360px;
+	}	
+#foldertree .activeMenuItem a{
+	color:#FFFFFF !important;				/*modify to change the active state font color of menu*/
+	font-weight:bold !important;
+    font-size: 24px;
+    
+    
+	}
+	
+#foldertree .disableMenuItem{
+	padding:10px;
+	background-position: 0px 4px;
+	background-image:url(bg_color1_20_20.png) !important;				/*modify to change the locked color of menu*/
+	border-bottom:5px solid #d0d0d0;
+	cursor:default;
+	border-collapse:collapse;
+	width:360px;
+	}	
+#foldertree .disableMenuItem a{
+	color:#404040 !important;				/*modify to change the locked state font color of menu*/
+	}	
+	
+#foldertree ul{
+	float: left;						/*modify to enable TOC state graphics. change 'none' to 'block'*/
+	} 
+	
+#foldertree li>div table img	{
+	display:inline-block;						/*modify to enable TOC state graphics. change 'none' to 'block'*/
+	}	
+
+#foldertree .disableMenuItem img,#foldertree .enableMenuItem img{
+	display:inherit !important;
+	}	
+
+#foldertree .disableMenuItem *{
+	cursor:default;
+	}	
+
+#foldertree .disableMenuItem:hover{
+	
+	}
+	
+.pageNumberBox{
+    position: relative !important;
+    width: 295px !important;
+    float: right;
+	padding: 10px 25px 10px 10px;
+	background-image:url(bg_color1_20_20.png) !important;	/*modify the background color of the page number box. font size and alignment can be adjusted in page number text field within Lectora*/
+	top:auto !important;
+	left:auto !important;
+	/*display:none;*/
+	
+	}
+	
+.pageNumberBox span{
+	
+	}	
+
+.deviceBlocker{
+	top:0px !important;
+	left:0px !important;
+	width:100% !important;
+	height:100% !important;
+	display:none;
+	clip:rect(auto, auto, auto, auto) !important;
+	}
+.menuPositionHint{
+	display:none;
+	}
+.deviceBlockerGfx{
+	display:none;
+	}
+.removePos{
+	top:auto !important;
+	left:auto !important;
+	
+	}
+div[id^='toc'] .indexClose{
+    display:block !important;
+    left: auto !important;
+    top: auto !important;
+    position: relative !important;
+    float: left;
+    
+}	
+
+.dialogTitle{
+width:820px !important;
+}
+.glossarydialogTitle{
+width:820px !important;
+}
+@media only screen and (max-width: 480px)  and (orientation: portrait) {
+	
+   /*.indexblocker,#toc88,#helpDialog{
+        
+        display:none !important;
+    }*/
+    .dialogTitle{
+        width:380px !important;
+    }
+    div[id^='toc']{
+        
+        position:fixed !important;
+        top:0px !important;
+        left:0px !important;
+        width: 100% !important;
+        height: 100% !important;
+        padding-top: 0px !important;
+        overflow-y: hidden;
+    }
+    
+    
+    div[id^='toc'] .indexClose{
+         position:fixed !important;
+        top:0px !important;
+        left:0px !important;
+        z-index:200 !important;
+        display: block !important;
+        
+        
+    }
+    
+     div[id^='toc']>div[id^='toc']{
+    /*height:auto !important;*/
+    overflow: scroll !important;  
+    }
+	
+	.glossarydialogTitle{
+	width:380px !important;
+	}
+	
+}
+
+@media only screen and (max-width: 790px) and (orientation: landscape){
+    
+	
+
+}
+.text145027Font4 {
+ 
+color: #ff5900 ! important;
+}
+.text155236Font4  {
+ 
+color: #ff5900 ! important;
+}
+.text158724Font3 {
+ 
+color: #ff5900 ! important;
+}
+.text158959Font4  {
+ 
+color: #ff5900 ! important;
+}
+.text158959Font5  {
+ 
+color: #ff5900 ! important;
+}
+.text158724Font3 {
+ 
+color: #ff5900 ! important;
+}

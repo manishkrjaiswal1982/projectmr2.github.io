@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Browser detection</title>
+<script src="jquery-3.4.1.min.js"></script>
+<script src="modernizr.min.js"></script>
+<script src="detectizr.js"></script>
+<script>
+function detectBrowser(){
+/*str = "<b><u>System details</u></b><br><br>";*/
+    
+	str ='Browser detection | <a href="feature_detection.html">Feature detection</a><br>'
+    str+="<ul>"
+str += "<li>Device Type: " + Detectizr.device.type + "</li>";
+str += "<li>Device OS: " + Detectizr.os.name + " " + Detectizr.os.version + "</li>";
+str += "<li>Browser: " + Detectizr.browser.name + " " + Detectizr.browser.version + "</li></ul>";
+
+$(".output").html(str);
+	}
+</script>
+	<style>
+	
+body{
+font-family:'knowledge2017',Arial !important;
+	font-size: 12px;
+	color:#fff;
+    margin:0px !important;
+   
+}
+		a{
+		font-family:'knowledge2017',Arial !important;
+	font-size: 12px;
+	color:#fff;
+			
+			
+		}
+        
+  ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+@font-face {
+  font-family: "Knowledge2017";
+  src: url("fonts/knowledge2017-regular-webfont.woff2") format("woff2"), url("fonts/knowledge2017-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Knowledge2017 Italic";
+  src: url("fonts/knowledge2017-regularitalic-webfont.woff2") format("woff2"), url("fonts/knowledge2017-regularitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Knowledge2017 Ultralight";
+  src: url("fonts/knowledge2017-ultralight-webfont.woff2") format("woff2"), url("fonts/knowledge2017-ultralight-webfont.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Knowledge2017 Ultralight Italic";
+  src: url("fonts/knowledge2017-ultralightitalic-webfont.woff2") format("woff2"), url("fonts/knowledge2017-ultralightitalic-webfont.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Knowledge2017 Light";
+  src: url("fonts/knowledge2017-light-webfont.woff2") format("woff2"), url("fonts/knowledge2017-light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Knowledge2017 Light Italic";
+  src: url("fonts/knowledge2017-lightitalic-webfont.woff2") format("woff2"), url("fonts/knowledge2017-lightitalic-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Knowledge2017 Medium";
+  src: url("fonts/knowledge2017-medium-webfont.woff2") format("woff2"), url("fonts/knowledge2017-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Knowledge2017 Medium Italic";
+  src: url("fonts/knowledge2017-mediumitalic-webfont.woff2") format("woff2"), url("fonts/knowledge2017-mediumitalic-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Knowledge2017 Bold";
+  src: url("fonts/knowledge2017-bold-webfont.woff2") format("woff2"), url("fonts/knowledge2017-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Knowledge2017 Bold Italic";
+  src: url("fonts/knowledge2017-bolditalic-webfont.woff2") format("woff2"), url("fonts/knowledge2017-bolditalic-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Knowledge2017 Black";
+  src: url("fonts/knowledge2017-black-webfont.woff2") format("woff2"), url("fonts/knowledge2017-black-webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Knowledge2017 Black Italic";
+  src: url("fonts/knowledge2017-blackitalic-webfont.woff2") format("woff2"), url("fonts/knowledge2017-blackitalic-webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+}
+	</style>
+</head>
+
+<body onload="detectBrowser()">
+	<div class="output" style="text-align: center"></div>
+</body>
+</html>

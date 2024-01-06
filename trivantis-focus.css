@@ -1,0 +1,68 @@
+div[id^="txt"],div[id^="button"],div[id^="textbutton"],div[id^="image"],div[id^="shape"] {    clip: auto !important;	}:focus{}p > a:focus {outline: -webkit-focus-ring-color auto 1px !important; outline-offset: 3px !important;}
+/*Updated here as per a360 feedback */
+div[class^="mejs__overlay-button"] {    clip: auto !important;	}:focus {outline: -webkit-focus-ring-color auto 1px !important; outline-offset: 3px !important;}
+/*update closed */
+div[id^="text"]:focus {outline: -webkit-focus-ring-color auto 1px !important; outline-offset: 10px !important;}
+
+ol:focus {outline: -webkit-focus-ring-color auto 1px !important; outline-offset: 2px !important;}
+
+div a:focus {outline: -webkit-focus-ring-color auto 1px !important; outline-offset: 3px !important;}
+
+div[id^="textbutton"]a:focus,div[id^="image"] a:focus,div[id^="anim"] a:focus,div[id^="shape"] a:focus {outline: -webkit-focus-ring-color auto 1px !important; outline-offset: -2px !important;}
+
+button:focus {outline: -webkit-focus-ring-color auto 1px !important;}
+
+/* select:focus, */input[type="file"]:focus,input[type="radio"]:focus,input[type="checkbox"]:focus,input[type="button"]:focus {outline: -webkit-focus-ring-color auto 1px !important; outline-offset: -2px !important;}
+
+textarea:focus,input[type="text"]:focus,input[type="password"]:focus,select:focus,div[id^="image"] a:focus img,div[id^="anim"] a:focus img,div[id^="shape"] a:focus img,div[id^="image"] a:focus svg,div[id^="shape"] a:focus svg,div[id^="text"] a:focus + div {outline: -webkit-focus-ring-color auto 1px !important; outline-offset: -2px !important;}
+
+div[id^="image"] a:focus,div[id^="anim"] a:focus,div[id^="shape"] a:focus {outline: -webkit-focus-ring-color auto 1px !important; outline-offset: -2px !important;}
+
+button:focus img{outline: -webkit-focus-ring-color auto 1px !important; outline-offset: 5px !important;}
+
+div[class^="mejs_"] button:focus,div[class^="mejs_"] span:focus,div[class^="mejs_"] a:focus {outline: -webkit-focus-ring-color auto 1px !important;}
+
+/*
+div[class^="mejs-"] button:focus,div[class^="mejs-"] span:focus,div[class^="mejs-"] a:focus {    border-color: #FA6400;  -webkit-box-shadow: inset 0 0 6px 1px rgba(250,100,0,1), 0 0 6px 1px rgba(250,100,0,0.8);     -moz-box-shadow: inset 0 0 6px 1px rgba(250,100,0,1), 0 0 6px 1px rgba(250,100,0,0.8);          box-shadow: inset 0 0 6px 1px rgba(250,100,0,1), 0 0 6px 1px rgba(250,100,0,0.8);}*/
+
+div[class="DLG_titleCloseBtn"]:focus{outline: -webkit-focus-ring-color auto 1px !important; outline-offset: -2px !important;}
+
+input[type="radio"]:focus + .custRadioL, input[type="checkbox"]:focus + .custCBL, input[type="radio"]:focus + .custRadio, input[type="checkbox"]:focus + .custCB{outline: -webkit-focus-ring-color auto 1px !important; outline-offset: -2px !important;}
+
+
+
+/*media query started*/
+@media only screen and (max-device-width: 480px)  and (orientation: portrait) {
+
+ div[id^="txt"],div[id^="button"],div[id^="textbutton"],div[id^="image"],div[id^="shape"] {    clip: auto !important;	}:focus{}p > a:focus {outline: none !important; outline-offset: none !important;}
+
+div[id^="text"]:focus {outline: none !important; outline-offset: none !important;}
+
+ol:focus {outline: none !important; outline-offset: none !important;}
+
+div a:focus {outline: none !important; outline-offset: none !important;}
+
+div[id^="textbutton"]a:focus,div[id^="image"] a:focus,div[id^="anim"] a:focus,div[id^="shape"] a:focus {outline: none !important; outline-offset: none !important;}
+
+button:focus {outline: none !important;}
+
+/* select:focus, */input[type="file"]:focus,input[type="radio"]:focus,input[type="checkbox"]:focus,input[type="button"]:focus {outline: none !important; outline-offset: none !important;}
+
+textarea:focus,input[type="text"]:focus,input[type="password"]:focus,select:focus,div[id^="image"] a:focus img,div[id^="anim"] a:focus img,div[id^="shape"] a:focus img,div[id^="image"] a:focus svg,div[id^="shape"] a:focus svg,div[id^="text"] a:focus + div {outline: none !important; outline-offset: none !important;}
+
+div[id^="image"] a:focus,div[id^="anim"] a:focus,div[id^="shape"] a:focus {outline: none !important; outline-offset: none !important;}
+
+button:focus img{outline: none !important; outline-offset: none !important;}
+
+div[class^="mejs_"] button:focus,div[class^="mejs_"] span:focus,div[class^="mejs_"] a:focus {outline: none !important;}
+
+
+div[class="DLG_titleCloseBtn"]:focus{outline: none !important; outline-offset: none !important;}
+
+input[type="radio"]:focus + .custRadioL, input[type="checkbox"]:focus + .custCBL, input[type="radio"]:focus + .custRadio, input[type="checkbox"]:focus + .custCB{outline: none !important; outline-offset: none !important;}
+    
+    
+    
+}
+
+/*media query closed*/

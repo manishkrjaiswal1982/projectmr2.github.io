@@ -1,0 +1,326 @@
+@media only screen and (max-device-width: 480px)  and (orientation: portrait) {
+
+ div[class^="flipBtn"] span {
+    height: 40px !important;
+    
+}
+    
+}
+
+
+.flipImage{
+-webkit-perspective: 800px;
+-moz-perspective: 800px;
+-o-perspective: 800px;
+perspective: 800px;
+-webkit-transform: rotateY(180deg);
+-moz-transform: rotateY(180deg);
+-o-transform: rotateY(180deg);
+transform: rotateY(180deg);
+-webkit-transition: -webkit-transform 1s;
+-moz-transition: -moz-transform 1s;
+-o-transition: -o-transform 1s;
+transition: transform 1s;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+
+.flipImageBfr{
+-webkit-perspective: 800px;
+-moz-perspective: 800px;
+-o-perspective: 800px;
+perspective: 800px;
+-webkit-transform: rotateY(0deg);
+-moz-transform: rotateY(0deg);
+-o-transform: rotateY(0deg);
+transform: rotateY(0deg);
+-webkit-transition: -webkit-transform 1s;
+-moz-transition: -moz-transform 1s;
+-o-transition: -o-transform 1s;
+transition: transform 1s;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+visibility: visible !important;
+}
+
+.flipTxtAftr{
+-webkit-perspective: 800px;
+-moz-perspective: 800px;
+-o-perspective: 800px;
+perspective: 800px;
+-webkit-transform: rotateY(0deg);
+-moz-transform: rotateY(0deg);
+-o-transform: rotateY(0deg);
+transform: rotateY(0deg);
+-webkit-transition: -webkit-transform 1s;
+-moz-transition: -moz-transform 1s;
+-o-transition: -o-transform 1s;
+transition: transform 1s;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+visibility: visible !important;
+}
+
+.flipTxtBfr{
+-webkit-perspective: 800px;
+-moz-perspective: 800px;
+-o-perspective: 800px;
+perspective: 800px;
+-webkit-transform: rotateY(180deg);
+-moz-transform: rotateY(180deg);
+-o-transform: rotateY(180deg);
+transform: rotateY(180deg);
+-webkit-transition: -webkit-transform 1s;
+-moz-transition: -moz-transform 1s;
+-o-transition: -o-transform 1s;
+transition: transform 1s;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+
+.textwhite{
+	color:#FFFFFF !important;
+	}
+.activetab button{
+
+	clip:auto !important;
+	cursor:default  !important;
+	}
+
+.visitedtab button{
+
+	clip:auto !important;
+	cursor:default  !important;
+	}
+
+.enabletab button{
+	cursor:pointer !important;
+	}
+
+.activetab a{
+	color:#FFFFFF !important; /*modify to change the font color for active state*/
+	cursor:default  !important;
+	}
+.activetab img{
+	cursor:default  !important;
+	}
+
+
+div[class^="flipContent"] svg {
+    width: calc(100% - 3px);    
+    border: 3px solid #d0d0d0;
+    border-bottom: none;
+    border-radius: 15px 15px 0px 0px;
+    
+}
+
+div[class^="flipBtn"] span {
+    position: absolute;
+    bottom: 0px;
+    width:  calc(100% + 1px);
+    padding-left: 10px;
+    padding-right: 30px;
+    padding-top: 15px;
+    box-sizing: border-box;
+    padding-bottom: 15px;
+    border-radius: 0px 0px 12px 12px;
+    -webkit-border-radius: 0px 0px 12px 12px;
+    left: 0px;
+    text-align: left !important;
+    margin-left: 0px;
+    height: 90px;    
+    background-image:url(bg_color6_20_20.png);
+   
+}
+
+.default span {    
+    background-image:url(bg_color2_20_20.png) !important;
+   
+}
+
+div[class^="flipBtn"] button svg{
+    border-radius: 20px;
+        
+}
+
+div[class^="flipBtn"] div:nth-child(2) {
+    border: 3px solid #d0d0d0;
+    border-radius: 15px;
+    width: calc(100% - 7px);
+    height: calc(100% - 4px);
+        
+}
+
+
+div[class^="flipImage"] div:nth-child(2) {
+    border: 3px solid #d0d0d0;
+    border-bottom: 0px;
+    border-radius: 15px 15px 0px 0px;
+    width: calc(100% - 4px);
+    
+}
+
+div[class^="flipImage"] svg {    
+    border-radius: 15px 15px 0px 0px;   
+    
+}
+
+
+.visitedtab:after {
+    content: "" !important;
+    width: 40px !important;
+    height: 40px !important;
+    background-image: url(tick_states_sprite.png) !important;
+    bottom: 0px !important;
+    right: 4px !important;
+    position: absolute !important;
+    display: inline-block !important;
+    background-position: 40px !important;
+    z-index: 1000 !important;
+    pointer-events: none !important;
+}
+
+.default button{
+    cursor:default  !important;
+}
+
+.default:after {
+    content: "" !important;
+    width: 40px !important;
+    height: 40px !important;
+    background-image: url(tick_states_sprite.png) !important;
+    bottom: 0px !important;
+    right: 4px !important;
+    position: absolute !important;
+    display: inline-block !important;
+    background-position: 120px !important;
+    z-index: 1000 !important;
+    pointer-events: none !important;
+}
+
+.activetab:after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-image: url(tick_states_sprite.png);
+    right: 4px;
+    bottom: 0px;
+    position: absolute;
+    display: inline-block;
+    background-position: 40px;
+    z-index: 1000;
+    pointer-events: none;
+}
+	
+.enabletab{
+	
+	
+	/* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)" !important;
+
+  /* IE 5-7 */
+  filter: alpha(opacity=100) !important;
+
+  /* Netscape */
+  -moz-opacity: 1;
+
+  /* Safari 1.x */
+  -khtml-opacity: 1;
+
+  /* Good browsers */
+  opacity: 1 !important;
+	cursor: pointer;
+
+	}
+
+/*.tabBtnBG_Ipad.visitedtab:after,.flipBtnBGNew.visitedtab:after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    
+	background-image:url(tick_visited.png);
+    top: 5px;
+    right: 8px;
+    position: absolute;
+    display: inline-block;
+    z-index: 1;
+    background-repeat: no-repeat;
+	border-radius: 10px;
+}*/
+
+.flipBtnBG{
+	/*background-color: #4d4d4d;*/
+	background-image:url(bg_color2_20_20.png);
+	
+	/*border-right:5px solid #4d4d4d;*/
+	}
+.flipBtnBG *{
+	visibility:hidden;
+	
+	}
+.flipBtnBG.visitedtab{
+		/*border-right:5px solid #ff8000 !important;*/ /*Modify to change style for Visited state [Current style : 5px border at bottom]*/
+	}	
+
+.flipBtnBG.activetab{
+	/*background-color: #ff8000 !important;*/
+	background-image: url(bg_color_orange.png);
+	}
+div[class^="flipBtn"].flipBtnBG:hover{
+	/*background-color: #ff8000;*/
+	/*background-image:url(bg_color_orange.png);
+	/*border-right:5px solid #ff8000;*/
+	}
+	
+	/* Manish	*/
+.tabBtnBG_Ipad{
+	/*background-color: #4d4d4d;*/
+	background-image:url(bg_color2_20_20.png);
+	/*border-right:5px solid #4d4d4d;*/
+	}
+.tabBtnBG_Ipad *{
+	visibility:hidden;
+	
+	}
+.tabBtnBG_Ipad.visitedtab{
+		/*border-right:5px solid #ff8000 !important; Modify to change style for Visited state [Current style : 5px border at bottom]*/
+	}	
+
+.tabBtnBG_Ipad.activetab{
+	/*background-color: #ff8000 !important;*/
+	background-image:url(bg_color_orange.png);
+}
+/* Manish	*/
+
+.flipTxt{
+	pointer-events:none;
+	}
+
+	.flipTxt p span {
+	color:#ffffff !important
+	}
+
+.visitedLineicon{
+	border-bottom:10px solid #FA6400; /*Modify to change style for Visited state [Current style : 5px border at bottom]*/
+	opacity: 1 !important;
+	}
+
+
+div[class^="tick"]{
+	width:30px;
+	height:30px;
+	background-image:url(tick_visited.png);
+	background-repeat:no-repeat;
+	background-position: 0px -1000px;
+	
+	}
+
+.visitedTick{
+	background-position: -5px -5px !important;
+	
+	}
+div[class^="tick"] *{
+	display:none;
+	background-position: 0px -1000px;
+	}
+

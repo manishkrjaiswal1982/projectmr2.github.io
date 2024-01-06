@@ -1,0 +1,261 @@
+@charset "utf-8";
+/* CSS Document */
+
+.correctAnswerStyle{
+	background-image:url(bg_color5_20_20.png) !important;
+	
+	}
+select{
+    border-radius: 5px;
+    padding: 5px;
+}
+
+select:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+  pointer-events: none;
+}
+.dndContainer{
+	width: 1000px !important;
+    
+    height: 350px;
+    top: 290px;
+    position: absolute;
+    /*z-index: 100;*/
+    left: 0px;
+	font-size: 14px;
+    font-family: "Knowledge2017", sans-serif;
+        padding-left: 50px;
+}
+
+.dndContainer select:disabled {
+   background-image:url(bg_color2_20_20.png) !important;
+   opacity: 1;
+}
+
+.disabled{
+	/* IE 8 */
+	
+ -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+
+  /* IE 5-7 */
+  filter: alpha(opacity=50);
+
+  /* Netscape */
+  -moz-opacity: 0.5;
+
+  /* Safari 1.x */
+  -khtml-opacity: 0.5;
+
+  /* Good browsers */
+  opacity: 0.5;
+	cursor:default;
+		}
+.disabled a img{
+	cursor:default !important;
+	}
+.enabled{
+	/* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+
+  /* IE 5-7 */
+  filter: alpha(opacity=100);
+
+  /* Netscape */
+  -moz-opacity: 1.0;
+
+  /* Safari 1.x */
+  -khtml-opacity:1.0;
+
+  /* Good browsers */
+  opacity: 1.0;
+	cursor:pointer;
+
+	}
+
+.enabled{
+	opacity: 1;
+	cursor:pointer;
+	}
+	
+.disabled17 *{
+	cursor:default !important;
+	}
+/*reset quiz structure*/
+
+.DDfieldset{
+	display:none;
+	}
+
+.DDfieldset *{
+	
+	position:relative !important;	
+	left:0px !important;
+	top:0px !important;
+	
+	}
+	
+.DDfieldset Div[id^='text']{
+	
+	
+	
+	
+	}
+.disablefirstfieldset{
+	background-color:transparent !important;
+	/*margin-top:215px;*/
+	}
+
+.DDfieldset{
+	
+	position:relative !important;
+	padding:5px 20px !important;
+	left:0px !important;
+	top:2px !important;
+   /* z-index: 910;
+	margin-left:40px;
+	background-image:url(bg_color2_20_20.png);
+	width: 860px;*/
+	margin-bottom:2px;
+	/*min-height: 30px;*/
+	}
+.dndContainer legend{
+    display: inline;
+    max-width: 600px !important;
+    float: left;
+}
+
+.DDfieldset div{
+	
+	width:auto !important;
+	}
+
+fieldset:first-of-type{
+	
+	}
+.fisrtFieldSet{
+	float:right;
+	}	
+
+.DDfieldset div[id^='text']{
+	display:block;
+	
+	/*line-height:22px;*/
+	
+	
+	
+	}
+.DDfieldset div[id^='combo']{
+	display:block;
+	margin-top: 10px;
+    
+	
+	}
+
+fieldset fieldset {
+	padding: 2px 0px !important;
+}
+
+.dd_cor_ico{
+  min-width: 30px !important;
+    height: 40px;
+    display: inline;
+    float: left;
+    /*background-image: url("dd_tick.png");
+    background-repeat: no-repeat;*/
+    margin-left: -50px;
+    
+    
+}
+.dd_incor_ico{
+   min-width: 30px !important;
+    height: 40px;
+    display: inline;
+    float: left;
+    /*background-image: url("dd_cross.png");
+    background-repeat: no-repeat;*/
+    margin-left: -50px;
+    
+    
+}
+
+@media only screen and (max-width: 480px)  and (orientation: portrait) {
+ .DDfieldset{
+	
+	margin-left: 0px !important;
+	width: 400px !important;
+	
+	}   
+.dndContainer{
+    width: 480px !important;
+    /* margin-left: 20px !important; */
+    height: 520px;
+    top: 295px !important;
+    left: 0px !important;
+    
+    padding-left: 20px;
+	
+}
+.DDfieldset div[id^='combo']{
+	 width:410px !important;
+	
+	}
+.DDfieldset select{
+	 width:410px !important;
+	
+	}
+    
+/*div[id^='text'] {
+    width: 420px !important;
+}*/
+
+.dd_cor_ico,.dd_incor_ico {
+    margin-left: -30px !important;
+}
+}
+/*fieldset div p{
+text-indent:0px !important;
+
+}
+
+
+
+fieldset div[id^='check']{
+	float:left;
+	margin-top:10px;
+	margin-left:6px;
+	display:block;
+	}
+fieldset div[id^='radio']{
+	float:left;
+	margin-top:10px;
+	margin-left:6px;
+	display:block;
+	}
+fieldset div[id^='text']{
+	width:640px !important;
+	margin-top:5px;
+	
+	}
+div[id^='text']{
+	width:600px !important;
+	margin-top:5px;
+	
+	}
+	
+fieldset label p {
+	display:block;
+	position:relative !important;
+	background-color:#E3E3DD;
+	padding: 5px 10px 5px 30px;
+	}	
+fieldset label span {
+	
+	}	
+*/

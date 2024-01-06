@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>feature detection</title>
+<script src="jquery-3.4.1.min.js"></script>
+<script src="modernizr_custom.min.js"></script>
+<script src="detectizr.js"></script>
+<style>
+body{	
+font-family:'knowledge2017',Arial !important;
+	font-size: 12px;
+	color: #fff;
+	background-image: url("bg_color6_20_20.png");
+		padding-bottom:10px;
+}
+a{
+	font-family:'knowledge2017',Arial !important;
+	font-size: 12px;
+	color:#FFFFFF;
+			
+			
+		}
+
+@font-face {
+  font-family: "Knowledge2017";
+  src: url("fonts/knowledge2017-regular-webfont.woff2") format("woff2"), url("fonts/knowledge2017-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Knowledge2017 Italic";
+  src: url("fonts/knowledge2017-regularitalic-webfont.woff2") format("woff2"), url("fonts/knowledge2017-regularitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Knowledge2017 Ultralight";
+  src: url("fonts/knowledge2017-ultralight-webfont.woff2") format("woff2"), url("fonts/knowledge2017-ultralight-webfont.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Knowledge2017 Ultralight Italic";
+  src: url("fonts/knowledge2017-ultralightitalic-webfont.woff2") format("woff2"), url("fonts/knowledge2017-ultralightitalic-webfont.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Knowledge2017 Light";
+  src: url("fonts/knowledge2017-light-webfont.woff2") format("woff2"), url("fonts/knowledge2017-light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Knowledge2017 Light Italic";
+  src: url("fonts/knowledge2017-lightitalic-webfont.woff2") format("woff2"), url("fonts/knowledge2017-lightitalic-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Knowledge2017 Medium";
+  src: url("fonts/knowledge2017-medium-webfont.woff2") format("woff2"), url("fonts/knowledge2017-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Knowledge2017 Medium Italic";
+  src: url("fonts/knowledge2017-mediumitalic-webfont.woff2") format("woff2"), url("fonts/knowledge2017-mediumitalic-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Knowledge2017 Bold";
+  src: url("fonts/knowledge2017-bold-webfont.woff2") format("woff2"), url("fonts/knowledge2017-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Knowledge2017 Bold Italic";
+  src: url("fonts/knowledge2017-bolditalic-webfont.woff2") format("woff2"), url("fonts/knowledge2017-bolditalic-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Knowledge2017 Black";
+  src: url("fonts/knowledge2017-black-webfont.woff2") format("woff2"), url("fonts/knowledge2017-black-webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Knowledge2017 Black Italic";
+  src: url("fonts/knowledge2017-blackitalic-webfont.woff2") format("woff2"), url("fonts/knowledge2017-blackitalic-webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+}
+</style>
+<style>
+	/*ul{-webkit-column-count: 2;-moz-column-count: 2;column-count: 2;}*/li{width:50%;float:left;}li{color:white}.no-animation li.animation{ color: white;font-weight:bold; }.no-apng li.apng{ color: white;font-weight:bold; }.no-applicationcache li.applicationcache{ color: white;font-weight:bold; }.no-atobbtoa li.atobbtoa{ color: white;font-weight:bold; }.no-audio li.audio{ color: white;font-weight:bold; }.no-audiopreload li.audiopreload{ color: white;font-weight:bold; }.no-backgroundblendmode li.backgroundblendmode{ color: white;font-weight:bold; }.no-backgroundcliptext li.backgroundcliptext{ color: white;font-weight:bold; }.no-backgroundsize li.backgroundsize{ color: white;font-weight:bold; }.no-batteryapi li.batteryapi{ color: white;font-weight:bold; }.no-bgpositionshorthand li.bgpositionshorthand{ color: white;font-weight:bold; }.no-bgpositionxy li.bgpositionxy{ color: white;font-weight:bold; }.no-bgrepeatspace li.bgrepeatspace{ color: white;font-weight:bold; }.no-bgrepeatround li.bgrepeatround{ color: white;font-weight:bold; }.no-bgsizecover li.bgsizecover{ color: white;font-weight:bold; }.no-blobconstructor li.blobconstructor{ color: white;font-weight:bold; }.no-bloburls li.bloburls{ color: white;font-weight:bold; }.no-borderimage li.borderimage{ color: white;font-weight:bold; }.no-borderradius li.borderradius{ color: white;font-weight:bold; }.no-boxshadow li.boxshadow{ color: white;font-weight:bold; }.no-boxsizing li.boxsizing{ color: white;font-weight:bold; }.no-canvas li.canvas{ color: white;font-weight:bold; }.no-canvastext li.canvastext{ color: white;font-weight:bold; }.no-checked li.checked{ color: white;font-weight:bold; }.no-classlist li.classlist{ color: white;font-weight:bold; }.no-contenteditable li.contenteditable{ color: white;font-weight:bold; }.no-contextmenu li.contextmenu{ color: white;font-weight:bold; }.no-cookies li.cookies{ color: white;font-weight:bold; }.no-cors li.cors{ color: white;font-weight:bold; }.no-cssall li.cssall{ color: white;font-weight:bold; }.no-cssanimations li.cssanimations{ color: white;font-weight:bold; }.no-csscalc li.csscalc{ color: white;font-weight:bold; }.no-csschunit li.csschunit{ color: white;font-weight:bold; }.no-csscolumns li.csscolumns{ color: white;font-weight:bold; }.no-cssescape li.cssescape{ color: white;font-weight:bold; }.no-cssexunit li.cssexunit{ color: white;font-weight:bold; }.no-cssfilters li.cssfilters{ color: white;font-weight:bold; }.no-cssgradients li.cssgradients{ color: white;font-weight:bold; }.no-cssgrid li.cssgrid{ color: white;font-weight:bold; }.no-cssgridlegacy li.cssgridlegacy{ color: white;font-weight:bold; }.no-csshyphens li.csshyphens{ color: white;font-weight:bold; }.no-softhyphens li.softhyphens{ color: white;font-weight:bold; }.no-softhyphensfind li.softhyphensfind{ color: white;font-weight:bold; }.no-cssinvalid li.cssinvalid{ color: white;font-weight:bold; }.no-cssmask li.cssmask{ color: white;font-weight:bold; }.no-csspointerevents li.csspointerevents{ color: white;font-weight:bold; }.no-csspositionsticky li.csspositionsticky{ color: white;font-weight:bold; }.no-csspseudoanimations li.csspseudoanimations{ color: white;font-weight:bold; }.no-csspseudotransitions li.csspseudotransitions{ color: white;font-weight:bold; }.no-cssreflections li.cssreflections{ color: white;font-weight:bold; }.no-cssremunit li.cssremunit{ color: white;font-weight:bold; }.no-cssresize li.cssresize{ color: white;font-weight:bold; }.no-cssscrollbar li.cssscrollbar{ color: white;font-weight:bold; }.no-csstransforms li.csstransforms{ color: white;font-weight:bold; }.no-csstransforms3d li.csstransforms3d{ color: white;font-weight:bold; }.no-csstransformslevel2 li.csstransformslevel2{ color: white;font-weight:bold; }.no-csstransitions li.csstransitions{ color: white;font-weight:bold; }.no-cssvalid li.cssvalid{ color: white;font-weight:bold; }.no-cssvhunit li.cssvhunit{ color: white;font-weight:bold; }.no-cssvmaxunit li.cssvmaxunit{ color: white;font-weight:bold; }.no-cssvminunit li.cssvminunit{ color: white;font-weight:bold; }.no-cssvwunit li.cssvwunit{ color: white;font-weight:bold; }.no-cubicbezierrange li.cubicbezierrange{ color: white;font-weight:bold; }.no-customevent li.customevent{ color: white;font-weight:bold; }.no-dataset li.dataset{ color: white;font-weight:bold; }.no-displaytable li.displaytable{ color: white;font-weight:bold; }.no-documentfragment li.documentfragment{ color: white;font-weight:bold; }.no-ellipsis li.ellipsis{ color: white;font-weight:bold; }.no-eventlistener li.eventlistener{ color: white;font-weight:bold; }.no-flash li.flash{ color: white;font-weight:bold; }.no-flexbox li.flexbox{ color: white;font-weight:bold; }.no-flexboxlegacy li.flexboxlegacy{ color: white;font-weight:bold; }.no-focuswithin li.focuswithin{ color: white;font-weight:bold; }.no-fontface li.fontface{ color: white;font-weight:bold; }.no-forcetouch li.forcetouch{ color: white;font-weight:bold; }.no-formvalidation li.formvalidation{ color: white;font-weight:bold; }.no-framed li.framed{ color: white;font-weight:bold; }.no-fullscreen li.fullscreen{ color: white;font-weight:bold; }.no-generatedcontent li.generatedcontent{ color: white;font-weight:bold; }.no-geolocation li.geolocation{ color: white;font-weight:bold; }.no-getrandomvalues li.getrandomvalues{ color: white;font-weight:bold; }.no-getusermedia li.getusermedia{ color: white;font-weight:bold; }.no-hairline li.hairline{ color: white;font-weight:bold; }.no-hashchange li.hashchange{ color: white;font-weight:bold; }.no-hiddenscroll li.hiddenscroll{ color: white;font-weight:bold; }.no-history li.history{ color: white;font-weight:bold; }.no-hsla li.hsla{ color: white;font-weight:bold; }.no-htmlimports li.htmlimports{ color: white;font-weight:bold; }.no-ie8compat li.ie8compat{ color: white;font-weight:bold; }.no-imgcrossorigin li.imgcrossorigin{ color: white;font-weight:bold; }.no-indexeddb li.indexeddb{ color: white;font-weight:bold; }.no-indexeddbblob li.indexeddbblob{ color: white;font-weight:bold; }.no-inlinesvg li.inlinesvg{ color: white;font-weight:bold; }.no-input li.input{ color: white;font-weight:bold; }.no-inputtypes li.inputtypes{ color: white;font-weight:bold; }.no-json li.json{ color: white;font-weight:bold; }.no-lastchild li.lastchild{ color: white;font-weight:bold; }.no-localstorage li.localstorage{ color: white;font-weight:bold; }.no-mediaqueries li.mediaqueries{ color: white;font-weight:bold; }.no-multiplebgs li.multiplebgs{ color: white;font-weight:bold; }.no-notification li.notification{ color: white;font-weight:bold; }.no-nthchild li.nthchild{ color: white;font-weight:bold; }.no-objectfit li.objectfit{ color: white;font-weight:bold; }.no-opacity li.opacity{ color: white;font-weight:bold; }.no-overflowscrolling li.overflowscrolling{ color: white;font-weight:bold; }.no-placeholder li.placeholder{ color: white;font-weight:bold; }.no-pointerevents li.pointerevents{ color: white;font-weight:bold; }.no-preserve3d li.preserve3d{ color: white;font-weight:bold; }.no-proximity li.proximity{ color: white;font-weight:bold; }.no-queryselector li.queryselector{ color: white;font-weight:bold; }.no-quotamanagement li.quotamanagement{ color: white;font-weight:bold; }.no-regions li.regions{ color: white;font-weight:bold; }.no-requestanimationframe li.requestanimationframe{ color: white;font-weight:bold; }.no-rgba li.rgba{ color: white;font-weight:bold; }.no-scrollsnappoints li.scrollsnappoints{ color: white;font-weight:bold; }.no-shapes li.shapes{ color: white;font-weight:bold; }.no-siblinggeneral li.siblinggeneral{ color: white;font-weight:bold; }.no-subpixelfont li.subpixelfont{ color: white;font-weight:bold; }.no-supports li.supports{ color: white;font-weight:bold; }.no-svg li.svg{ color: white;font-weight:bold; }.no-svgasimg li.svgasimg{ color: white;font-weight:bold; }.no-target li.target{ color: white;font-weight:bold; }.no-textalignlast li.textalignlast{ color: white;font-weight:bold; }.no-textareamaxlength li.textareamaxlength{ color: white;font-weight:bold; }.no-textshadow li.textshadow{ color: white;font-weight:bold; }.no-touchevents li.touchevents{ color: white;font-weight:bold; }.no-typedarrays li.typedarrays{ color: white;font-weight:bold; }.no-unicode li.unicode{ color: white;font-weight:bold; }.no-unicoderange li.unicoderange{ color: white;font-weight:bold; }.no-urlparser li.urlparser{ color: white;font-weight:bold; }.no-userdata li.userdata{ color: white;font-weight:bold; }.no-userselect li.userselect{ color: white;font-weight:bold; }.no-variablefonts li.variablefonts{ color: white;font-weight:bold; }.no-video li.video{ color: white;font-weight:bold; }.no-videoautoplay li.videoautoplay{ color: white;font-weight:bold; }.no-videocrossorigin li.videocrossorigin{ color: white;font-weight:bold; }.no-videoloop li.videoloop{ color: white;font-weight:bold; }.no-videopreload li.videopreload{ color: white;font-weight:bold; }.no-webworkers li.webworkers{ color: white;font-weight:bold; }.no-willchange li.willchange{ color: white;font-weight:bold; }.no-wrapflow li.wrapflow{ color: white;font-weight:bold; }.no-xdomainrequest li.xdomainrequest{ color: white;font-weight:bold; }.no-setclasses li.setclasses{ color: white;font-weight:bold; }	
+</style>
+	
+	
+</head>
+
+<body>
+	<font color="#FFF"><a href="browser_detection.html">Browser detection</a> | Feature detection<br></font>
+	<ul><li class="animation">animation</li><li class="apng">apng</li><li class="applicationcache">applicationcache</li><li class="atobbtoa">atobbtoa</li><li class="audio">audio</li><li class="audiopreload">audiopreload</li><li class="backgroundblendmode">backgroundblendmode</li><li class="backgroundcliptext">backgroundcliptext</li><li class="backgroundsize">backgroundsize</li><li class="batteryapi">batteryapi</li><li class="bgpositionshorthand">bgpositionshorthand</li><li class="bgpositionxy">bgpositionxy</li><li class="bgrepeatspace">bgrepeatspace</li><li class="bgrepeatround">bgrepeatround</li><li class="bgsizecover">bgsizecover</li><li class="blobconstructor">blobconstructor</li><li class="bloburls">bloburls</li><li class="borderimage">borderimage</li><li class="borderradius">borderradius</li><li class="boxshadow">boxshadow</li><li class="boxsizing">boxsizing</li><li class="canvas">canvas</li><li class="canvastext">canvastext</li><li class="checked">checked</li><li class="classlist">classlist</li><li class="contenteditable">contenteditable</li><li class="contextmenu">contextmenu</li><li class="cookies">cookies</li><li class="cors">cors</li><li class="cssall">cssall</li><li class="cssanimations">cssanimations</li><li class="csscalc">csscalc</li><li class="csschunit">csschunit</li><li class="csscolumns">csscolumns</li><li class="cssescape">cssescape</li><li class="cssexunit">cssexunit</li><li class="cssfilters">cssfilters</li><li class="cssgradients">cssgradients</li><li class="cssgrid">cssgrid</li><li class="cssgridlegacy">cssgridlegacy</li><li class="csshyphens">csshyphens</li><li class="softhyphens">softhyphens</li><li class="softhyphensfind">softhyphensfind</li><li class="cssinvalid">cssinvalid</li><li class="cssmask">cssmask</li><li class="csspointerevents">csspointerevents</li><li class="csspositionsticky">csspositionsticky</li><li class="csspseudoanimations">csspseudoanimations</li><li class="csspseudotransitions">csspseudotransitions</li><li class="cssreflections">cssreflections</li><li class="cssremunit">cssremunit</li><li class="cssresize">cssresize</li><li class="cssscrollbar">cssscrollbar</li><li class="csstransforms">csstransforms</li><li class="csstransforms3d">csstransforms3d</li><li class="csstransformslevel2">csstransformslevel2</li><li class="csstransitions">csstransitions</li><li class="cssvalid">cssvalid</li><li class="cssvhunit">cssvhunit</li><li class="cssvmaxunit">cssvmaxunit</li><li class="cssvminunit">cssvminunit</li><li class="cssvwunit">cssvwunit</li><li class="cubicbezierrange">cubicbezierrange</li><li class="customevent">customevent</li><li class="dataset">dataset</li><li class="displaytable">displaytable</li><li class="documentfragment">documentfragment</li><li class="ellipsis">ellipsis</li><li class="eventlistener">eventlistener</li><li class="flash">flash</li><li class="flexbox">flexbox</li><li class="flexboxlegacy">flexboxlegacy</li><li class="focuswithin">focuswithin</li><li class="fontface">fontface</li><li class="forcetouch">forcetouch</li><li class="formvalidation">formvalidation</li><li class="framed">framed</li><li class="fullscreen">fullscreen</li><li class="generatedcontent">generatedcontent</li><li class="geolocation">geolocation</li><li class="getrandomvalues">getrandomvalues</li><li class="getusermedia">getusermedia</li><li class="hairline">hairline</li><li class="hashchange">hashchange</li><li class="hiddenscroll">hiddenscroll</li><li class="history">history</li><li class="hsla">hsla</li><li class="htmlimports">htmlimports</li><li class="ie8compat">ie8compat</li><li class="imgcrossorigin">imgcrossorigin</li><li class="indexeddb">indexeddb</li><li class="indexeddbblob">indexeddbblob</li><li class="inlinesvg">inlinesvg</li><li class="input">input</li><li class="inputtypes">inputtypes</li><li class="json">json</li><li class="lastchild">lastchild</li><li class="localstorage">localstorage</li><li class="mediaqueries">mediaqueries</li><li class="multiplebgs">multiplebgs</li><li class="notification">notification</li><li class="nthchild">nthchild</li><li class="objectfit">objectfit</li><li class="opacity">opacity</li><li class="overflowscrolling">overflowscrolling</li><li class="placeholder">placeholder</li><li class="pointerevents">pointerevents</li><li class="preserve3d">preserve3d</li><li class="proximity">proximity</li><li class="queryselector">queryselector</li><li class="quotamanagement">quotamanagement</li><li class="regions">regions</li><li class="requestanimationframe">requestanimationframe</li><li class="rgba">rgba</li><li class="scrollsnappoints">scrollsnappoints</li><li class="shapes">shapes</li><li class="siblinggeneral">siblinggeneral</li><li class="subpixelfont">subpixelfont</li><li class="supports">supports</li><li class="svg">svg</li><li class="svgasimg">svgasimg</li><li class="target">target</li><li class="textalignlast">textalignlast</li><li class="textareamaxlength">textareamaxlength</li><li class="textshadow">textshadow</li><li class="touchevents">touchevents</li><li class="typedarrays">typedarrays</li><li class="unicode">unicode</li><li class="unicoderange">unicoderange</li><li class="urlparser">urlparser</li><li class="userdata">userdata</li><li class="userselect">userselect</li><li class="variablefonts">variablefonts</li><li class="video">video</li><li class="videoautoplay">videoautoplay</li><li class="videocrossorigin">videocrossorigin</li><li class="videoloop">videoloop</li><li class="videopreload">videopreload</li><li class="webworkers">webworkers</li><li class="willchange">willchange</li><li class="wrapflow">wrapflow</li><li class="xdomainrequest">xdomainrequest</li><li class="setclasses">setclasses</li></ul>
+</body>
+</html>

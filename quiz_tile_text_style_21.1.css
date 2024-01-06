@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* CSS Document */
+.quizLabel{
+   
+    box-shadow: 0 0 0 3px #d0d0d0;
+    border-radius: 10px;
+}
+
+input[type='radio'],input[type='checkbox']{
+    
+    opacity:0;
+}
+
+div[class^="q_option"]{
+    
+   
+    visibility: hidden !important;
+}
+
+.focusQuizOpt{
+   /* box-shadow: 0 0 0 3px #fa6400;*/
+    outline: -webkit-focus-ring-color auto 1px;
+    outline-offset: 5px;
+    
+}
+.selQuizOpt{
+    box-shadow: 0 0 0 3px #fa6400;
+   
+    
+}
+
+
+
+.quizLabel.selQuizOpt label ol{
+   
+}
+
+.quizLabel label{
+    width: 100%;
+    height: 100%;
+       display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    
+}
+
+.quizLabel label ol{
+    padding:10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.quizLabel label ol *{
+    color:#404040 !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.quizLabel.activeLabel label{
+   
+}
+
+@media only screen and (max-device-width: 480px)  and (orientation: portrait) {
+
+    .quizLabel label ol{    
+    overflow-y: auto;  
+    padding:10px 5px;
+    height: 70px;
+} 	
+ 
+  .quizLabel label ol li{
+line-height: 16px !important;
+}  
+    
+}
+
+@media only screen and (min-device-width: 1030px) {
+.quizLabel.activeLabel label:hover{
+    box-shadow: 0 0 0 3px #fa6400;
+
+}   
+}

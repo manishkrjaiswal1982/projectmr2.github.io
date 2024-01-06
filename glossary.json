@@ -1,0 +1,28 @@
+{
+	"glossaryColumns": ["Glossary Label", "Definition"],
+	
+	"glossaryData": {
+        "Gl001":{
+                    "title":"Money Laundering",
+                    "desc": "Money laundering is the process of making criminal proceeds ('dirty' money) appear to have come from a legitimate source ('clean' money). Criminals do this by moving those proceeds through different entities, accounts, transactions and jurisdictions so that the funds are less likely to be traced back to the original crime."
+                   },
+		 "Gl004":{
+                    "title":"Terrorist financing2",
+                    "desc": "Terrorist financing is the solicitation, collection or delivery of funds to support terrorist acts or organisations. Unlike money laundering — which always involves the proceeds of a crime — funds to finance terrorism are often diverted from legitimate sources. Of course, terrorists may also utilise laundered funds derived from criminal enterprises."
+                   },
+        "Gl002":{
+                    "title":"Terrorist financing",
+                    "desc": "Terrorist financing is the solicitation, collection or delivery of funds to support terrorist acts or organisations. Unlike money laundering — which always involves the proceeds of a crime — funds to finance terrorism are often diverted from legitimate sources. Of course, terrorists may also utilise laundered funds derived from criminal enterprises."
+                   },
+        "Gl003":{
+                    "title":"PEP (Unordered List)",
+                    "desc": "Terrorist financing is the solicitation, collection:<ul><li>A person who holds a prominent public position or function in a government body or international organisation.</li><li>The definition also extends to a PEP's immediate family members and close associates. PEPs — and other customer and transaction types — are considered to present a higher risk of money laundering, terrorist financing and other financial crimes. This is because they often have access to public funds and have a perceived position of trust within society.</li></ul>"
+            
+                   },
+        "Gl004":{
+                    "title":"PEP (Ordered List)",
+                    "desc": "Terrorist financing is the solicitation, collection:<ol><li>A person who holds a prominent public position or function in a government body or international organisation.</li><li>The definition also extends to a PEP's immediate family members and close associates. PEPs — and other customer and transaction types — are considered to present a higher risk of money laundering, terrorist financing and other financial crimes. This is because they often have access to public funds and have a perceived position of trust within society.</li></ol>"
+            
+                   }
+	}
+}

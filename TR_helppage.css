@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+.resourcesTable th[scope='row']{
+    font-weight: normal !important;
+}
+@media only screen and (max-device-width: 480px)  and (orientation: portrait) {
+
+.tabBtnCls{
+    margin-right: 40px !important;
+}
+ 
+    
+}
+
+.tablist p a span{
+    text-decoration: none;
+   
+}
+.tabBtnCls{    
+    display: inline-block;
+    align-content: center;    
+    line-height: 30px;
+    margin-right: 80px;
+
+}
+
+
+.helpActivelink , .HelpMenu_cont li a:hover{
+    
+    border-bottom: 5px solid #162e5c;
+   
+}
+
+.helpActivelink span, .HelpMenu_cont li a:hover span{
+    
+    color:#162e5c !important;
+   
+}
+
+.glossaryTable table, .resourcesTable table{
+    
+    width:100% !important;
+}
+
+
+

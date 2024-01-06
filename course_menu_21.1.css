@@ -1,0 +1,90 @@
+@media only screen and (max-device-width: 480px)  and (orientation: portrait) {
+
+    div[class^="menuItem"] div:nth-child(2) {
+    border: 3px solid #d0d0d0;
+    border-radius: 15px;
+    width: calc(100% - 6px);
+    height: calc(100% - 0px) !important;
+        
+} 	
+
+    
+div[class^="menuItem"] span {
+    height: 40px !important;
+    
+}
+    
+}
+
+/*media query closed*/
+
+div[class^="imgBorderCls"] img {
+            border-radius: 17px;
+    }
+
+div[class^="imgBorderCls"] svg {
+            border-radius: 17px;
+    }
+
+div[class^="menuItem"] button:disabled span {    
+    background-image:url(bg_color2_20_20.png);
+   
+}
+
+div[class^="menuItem"]:hover button:disabled span {    
+    background-image:url(bg_color2_20_20.png);
+   
+}
+
+div[class^="menuItem"] span {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 30px;
+    padding-top: 15px;
+    box-sizing: border-box;
+    padding-bottom: 15px;
+    border-radius: 0px 0px 12px 12px;
+    -webkit-border-radius: 0px 0px 12px 12px;
+    left: 0px;
+    text-align: left !important;
+    margin-left: 0px;
+    height: 90px;
+    background-image:url(bg_color6_20_20.png);
+   
+}
+
+div[class^="menuItem"]:hover button span{
+    background-image:url(bg_color3_20_20.png);
+
+}
+/*.activeMenu:not(:hover) button span{    
+    background-image:url(bg_color6_20_20.png);
+    
+}*/
+
+div[class^="menuItem"] button svg{
+    border-radius: 20px;
+        
+}
+
+div[class^="menuItem"] div:nth-child(2) {
+    border: 3px solid #d0d0d0;
+    border-radius: 15px;
+    width: calc(100% - 7px);
+    height: calc(100% - 4px);
+        
+}
+
+div[class^="menuItem"] {
+margin-left:-2px !important; /*Updated my Manish for alignment issue on menupage */
+}
+
+.activeMenu button span{    
+    background-image:url(bg_color3_20_20.png);
+    
+}
+
+
+

@@ -1,0 +1,184 @@
+div[class^="tabBtn"] button:disabled span {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 30px;
+    padding-top: 15px;
+    box-sizing: border-box;
+    padding-bottom: 15px;
+    border-radius: 0px 0px 12px 12px;
+    -webkit-border-radius: 0px 0px 12px 12px;
+    left: 0px;
+    text-align: left !important;
+    margin-left: 0px;
+    height: 90px;
+    background-image:url(bg_color2_20_20.png);
+   
+}
+
+div[class^="tabBtn"] span {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 30px;
+    padding-top: 15px;
+    box-sizing: border-box;
+    padding-bottom: 15px;
+    border-radius: 0px 0px 12px 12px;
+    -webkit-border-radius: 0px 0px 12px 12px;
+    left: 0px;
+    text-align: left !important;
+    margin-left: 0px;
+    height: 90px;
+    background-image:url(bg_color6_20_20.png);
+   
+}
+
+div[class^="tabBtn"] button svg{
+    border-radius: 20px;
+        
+}
+
+div[class^="tabBtn"] div:nth-child(2) {
+    border: 3px solid #d0d0d0;
+    border-radius: 15px;
+    width: calc(100% - 7px);
+    height: calc(100% - 4px);
+        
+}
+
+
+.visitedtab:after {
+    content: "" !important;
+    width: 40px !important;
+    height: 40px !important;
+    background-image: url(tick_states_sprite.png) !important;
+    bottom: 0px !important;
+    right: 2px !important;
+    position: absolute !important;
+    display: inline-block !important;
+    background-position: 40px !important;
+    z-index: 1000 !important;
+    pointer-events: none !important;
+}
+
+.default:after {
+    content: "" !important;
+    width: 40px !important;
+    height: 40px !important;
+    background-image: url(tick_states_sprite.png) !important;
+    bottom: 0px !important;
+    right: 2px !important;
+    position: absolute !important;
+    display: inline-block !important;
+    background-position: 120px !important;
+    z-index: 1000 !important;
+    pointer-events: none !important;
+}
+
+.activetab:after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-image: url(tick_states_sprite.png);
+    right: 2px;
+    bottom: 0px;
+    position: absolute;
+    display: inline-block;
+    background-position: 40px;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+.textwhite{
+	color:#FFFFFF !important;
+	}
+
+.default button{
+    cursor:default  !important;
+}
+.activetab button{
+
+	clip:auto !important;
+	cursor:default  !important;
+	}
+
+.activetab a{
+	color:#FFFFFF !important; /*modify to change the font color for active state*/
+	cursor:default  !important;
+	}
+.activetab img{
+	cursor:default  !important;
+	}
+div[class^="tabBtn"]{
+	clip:auto !important;
+	cursor:pointer;
+
+	/* IE 8 */
+ 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";	/*Modify to change opacity for disabled tab */
+	
+	/* IE 5-7 */
+	filter: alpha(opacity=50);	/*Modify to change opacity for disabled tab */
+	
+	/* Netscape */
+	-moz-opacity: 0.5;		/*Modify to change opacity for disabled tab */
+	
+	/* Safari 1.x */
+	-khtml-opacity: 0.5;		/*Modify to change opacity for disabled tab */
+	
+	/* Good browsers */
+	opacity: 0.5;			/*Modify to change opacity for disabled tab */
+
+	
+	}
+	
+.enabletab{
+	
+	
+	/* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)" !important;
+
+  /* IE 5-7 */
+  filter: alpha(opacity=100) !important;
+
+  /* Netscape */
+  -moz-opacity: 1;
+
+  /* Safari 1.x */
+  -khtml-opacity: 1;
+
+  /* Good browsers */
+  opacity: 1 !important;
+
+	
+	
+	}
+	
+.visitedtab{
+	 /*border-bottom:5px solid #ff8000;Modify to change style for Visited state [Current style : 5px border at bottom]
+	opacity: 1 !important;
+	height: 115px !important;
+    width: 120px !important;*/
+	}
+
+
+div[class^="tick"]{
+	width:40px;
+	height:40px;
+	background-image:url(tick_states_sprite.png);
+	background-repeat:no-repeat;
+	background-position: 0px -1000px;
+	
+	}
+	
+.visitedTick{
+	background-position: -5px -5px !important;
+	
+	}
+div[class^="tick"] *{
+	display:none;
+	background-position: 0px -1000px;
+	
+	}
